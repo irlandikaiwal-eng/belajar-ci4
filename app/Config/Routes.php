@@ -20,4 +20,5 @@ $routes->group('', ['filter' => 'auth'], static function ($routes) {
     $routes->post('mahasiswa/update/(:num)', 'Mahasiswa::update/$1');
     $routes->get('mahasiswa/hapus/(:num)', 'Mahasiswa::hapus/$1');
 });
+    $routes->get('scrum', 'Scrum::index'); 
 
